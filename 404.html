@@ -9,7 +9,7 @@
         var segmentCount = 0;
   
         var l = window.location;
-        const nonHomeUrls = ['data-science','/mathematics','stock-market','/lagrange', 'linker', 'vis', 'math','/ticker-finder' ];
+        const nonHomeUrls = ['/data-science','/mathematics','stock-market','/lagrange', 'linker', 'vis', 'math','/ticker-finder'];
           for (let i = 0; i < nonHomeUrls.length; i++) {
             const urlRegex = new RegExp(nonHomeUrls[i], 'i');
             const verifyUrl = urlRegex.test(l.pathname);
